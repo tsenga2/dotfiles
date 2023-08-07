@@ -47,6 +47,18 @@ Plug 'arecarn/vim-spell-utils'
 Plug 'ervandew/supertab'
 Plug 'ntpeters/vim-better-whitespace'
 
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'mattn/vim-lsp-icons'
+
+let g:lsp_diagnostics_enabled=1
+let g:lsp_diagnostics_echo_cursor=1
+let g:lsp_text_edit_enabled=1
+let g:asyncomplete_auto_popup=1
+let g:asyncomplete_popup_delay=200
+
 call plug#end()
 
 colorscheme sonokai
@@ -64,7 +76,7 @@ hi SpellLocal cterm=underline ctermul=Cyan
 
 
 set cursorline
-hi CursorLine term=NONE ctermfg=Blue ctermbg=Black
+hi CursorLine term=NONE ctermfg=None ctermbg=Black
 
 set showmatch
 hi MatchParen cterm=bold ctermfg=Green ctermbg=Red

@@ -9,4 +9,5 @@ setopt PROMPT_SUBST
 PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 
 alias ll='ls -lt'
-
+alias vi='vim'
+alias clc='clear'

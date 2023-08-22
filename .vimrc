@@ -16,7 +16,7 @@ inoremap " ""<Left>
 inoremap ' ''<Left>
 
 nnoremap <Esc><Esc> :nohl<CR>
-inoremap <silent> jj <esc>:w<cr>
+inoremap <silent> jj <esc>
 
 set number relativenumber
 set nu rnu
@@ -41,6 +41,8 @@ Plug 'sainnhe/sonokai'
 Plug 'w0ng/vim-hybrid'
 Plug 'tomasr/molokai'
 Plug 'cocopon/iceberg.vim'
+Plug 'sainnhe/everforest'
+Plug 'nordtheme/vim'
 Plug 'chrisbra/csv.vim'
 Plug 'tpope/vim-repeat'
 Plug 'arecarn/vim-spell-utils'
@@ -52,6 +54,9 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'mattn/vim-lsp-icons'
+Plug 'kqito/vim-easy-replace'
+Plug 'terryma/vim-expand-region'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 let g:lsp_diagnostics_enabled=1
 let g:lsp_diagnostics_echo_cursor=1
@@ -61,7 +66,8 @@ let g:asyncomplete_popup_delay=200
 
 call plug#end()
 
-colorscheme sonokai
+let g:solarized_termcolors=256
+colorscheme nord
 syntax on
 
 set spell

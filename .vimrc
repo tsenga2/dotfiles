@@ -88,7 +88,10 @@ set showmatch
 hi MatchParen cterm=bold ctermfg=Green ctermbg=Red
 
 set laststatus=2
-set statusline=%F%m%h%w\ %<[ENC=%{&fenc!=''?&fenc:&enc}]
+set statusline=%F%m%h%w\ 
+set statusline+=%=
+set statusline+=[%l/%L(%02v)])
+hi statusline guibg=Black ctermfg=11 guifg=Green ctermbg=0"))
 
 let &t_SI.="\e[5 q" "SI = INSERT mode
 let &t_SR.="\e[4 q" "SR = REPLACE mode

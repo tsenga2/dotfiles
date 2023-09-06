@@ -3,8 +3,6 @@ set nocompatible
 set background=dark
 set hlsearch
 set incsearch
-set smartindent
-set clipboard+=unnamed
 inoremap $ $$<Left>
 inoremap { {}<Left>
 inoremap < <><Left>
@@ -17,6 +15,8 @@ inoremap ' ''<Left>
 
 nnoremap <Esc><Esc> :nohl<CR>
 inoremap <silent> jj <esc>
+
+vmap <C-c> :w !xsel -ib<CR><CR>
 
 set number relativenumber
 set nu rnu

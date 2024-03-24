@@ -12,6 +12,7 @@
 #curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 #    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+#sudo apt install libopenblas-dev
 #sudo apt install build-essential
 #sudo apt install libsigsegv2
 #sudo apt install m4

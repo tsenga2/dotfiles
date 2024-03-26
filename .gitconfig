@@ -5,3 +5,6 @@
 	cm=commit -m
 	lg=log --oneline
 	gr=log --graph --date=short --decorate=short --pretty='%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+[user]
+	email = tatsuro.senga@gmail.com
+	name = tsenga2

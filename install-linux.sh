@@ -1,4 +1,4 @@
-#!/bin/sh
+!/bin/sh
 #sudo apt update
 #sudo apt upgrade
 #
@@ -11,7 +11,6 @@
 #sudo apt install curl
 #curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 #    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
 #sudo apt install libopenblas-dev
 #sudo apt install build-essential
 #sudo apt install libsigsegv2
@@ -23,7 +22,7 @@
 #sudo apt install autoconf-archive
 #sudo apt install gfortran
 #sudo apt install g++
-123456789
+#
 #sudo apt install wget
 #wget -O- https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB | gpg --dearmor | sudo tee /usr/share/keyrings/oneapi-archive-keyring.gpg > /dev/null
 #echo "deb [signed-by=/usr/share/keyrings/oneapi-archive-keyring.gpg] https://apt.repos.intel.com/oneapi all main" | sudo tee /etc/apt/sources.list.d/oneAPI.list
@@ -33,11 +32,11 @@
 #source /opt/intel/oneapi/setvars.sh
 
 #sudo apt build-dep hdf5
-#mkdir ~/temp/hdf5-web
-#cd ~/temp/hdf5-web
+#mkdir temp/hdf5-for-gcc
+#cd temp/hdf5-for-gcc
 #wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.1/src/hdf5-1.14.1-2.tar.gz
 #tar -xvzf hdf5-1.14.1-2.tar.gz
-#cd ~/temp/hdf-web/hdf5-1.14.1-2
+#cd hdf5-1.14.1-2
 #autoreconf -if
 #./configure CC=gcc FC=gfortran --with-szlib --enable-fortran --enable-build-mode=production --prefix=$HOME/hdf5-gcc
 #make install
@@ -51,12 +50,12 @@
 #make install
 
 
-#git clone https://github.research.its.qmul.ac.uk/tew344/libsef-ts.git
-#cd libsef-ts
-#autoreconf -if
-#./configure CC=gcc FC=gfortran --prefix=$HOME/libsef-gcc
-#make install
-#libtool --finish /home/tsenga/libsef-gcc/lib
+git clone https://github.research.its.qmul.ac.uk/tew344/libsef-ts.git
+cd libsef-ts
+autoreconf -if
+./configure CC=gcc FC=gfortran --prefix=$HOME/libsef-gcc
+make install
+libtool --finish /home/tsenga/libsef-gcc/lib
 
 #git clone https://github.research.its.qmul.ac.uk/tew344/libsef-ts.git
 #cd ~/libsef-ts
@@ -65,6 +64,6 @@
 #make install
 #libtool --finish /home/tsenga/libsef-intel/lib
 
-#sudo apt install wget
-#wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-#sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt install wget
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
